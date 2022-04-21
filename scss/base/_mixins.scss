@@ -1,0 +1,15 @@
+@mixin prefijos {
+    &:hover{
+        transition: transform 1s;
+        transform:scale(2);
+    }
+    
+}
+
+@mixin prefijossucursales {
+    &:hover{
+        transition: transform 1s;
+        transform:scale(1.2);
+    }
+    
+}

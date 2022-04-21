@@ -1,0 +1,57 @@
+@import 'base/_listas.scss';
+@import 'componentes/_footer.scss';
+@import 'base/_extends';
+@import 'base/mixins';
+
+
+/*variables */
+$primary:red;
+$font-size:10rem;
+$brand:'dsc';
+
+/*utilizo la VARIABLE para completar el nombre de la clase*/
+.#{$brand}-title-primary {
+
+    /*aplico las variables*/
+    color: $primary;
+    font-size: $font-size;
+}
+
+/*****INICIO DEL NESTING*******/
+.dsc-card {
+    width: 202px;
+    padding: 0;
+
+    border: {
+        radius: 5px;
+        width: 1px;
+        style: solid;
+        color: $primary;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    h4 {
+        height: 90px;
+        line-height: 30px;
+        margin: 0;
+        /*Utilizo listas.scss*/
+        font-size: nth($size,1);
+    }
+}
+
+/*****FIN DEL NESTING**********/
+
+/***APLICO MIXINS.SCSS*/
+.btn2{
+    @include prefijossucursales; 
+}
+
+.IconoSocial{
+    @include prefijos; 
+}
+/***FIN APLICO MIXINS.SCSS.*/

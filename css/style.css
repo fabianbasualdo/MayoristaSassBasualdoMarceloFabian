@@ -1,0 +1,96 @@
+/****************************aplico FLEXBOX a contactos***************************/
+.contactosPadre {
+  grid-area: contactospadre;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contactoshijos {
+  border: medium solid #999;
+  background-color: #666;
+}
+
+/********************************************************************************/
+/********************alineando con flex los horarios del footer****************************/
+.horario {
+  /* display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  justify-content: space-evenly;*/
+  font-family: "Courier New", Courier, monospace;
+  /*APLICO _extends.scss*/
+}
+
+/*****************quitando los puntos a los menues y alineando con flex*********************/
+.menufoot {
+  font-family: "Courier New", Courier, monospace;
+  /*display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;*/
+  /*APLICO _extends.scss*/
+}
+
+.menufooterhijo ul {
+  list-style: none;
+}
+
+.menufooterhijo li a {
+  text-decoration: none;
+}
+
+/**************************************************************************************/
+.horario, .menufoot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*variables */
+/*utilizo la VARIABLE para completar el nombre de la clase*/
+.dsc-title-primary {
+  /*aplico las variables*/
+  color: red;
+  font-size: 10rem;
+}
+
+/*****INICIO DEL NESTING*******/
+.dsc-card {
+  width: 202px;
+  padding: 0;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+.dsc-card img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.dsc-card h4 {
+  height: 90px;
+  line-height: 30px;
+  margin: 0;
+  /*Utilizo listas.scss*/
+  font-size: 16px;
+}
+
+/*****FIN DEL NESTING**********/
+/***APLICO MIXINS.SCSS*/
+.btn2:hover {
+  transition: transform 1s;
+  transform: scale(1.2);
+}
+
+.IconoSocial:hover {
+  transition: transform 1s;
+  transform: scale(2);
+}
+
+/***FIN APLICO MIXINS.SCSS.*/
+
+/*# sourceMappingURL=style.css.map */
